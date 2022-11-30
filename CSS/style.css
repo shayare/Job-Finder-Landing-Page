@@ -1,0 +1,218 @@
+:root {
+    font-size: 62.5%;
+    list-style: none;
+    --white:rgb(255, 255, 255);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    color: var(--white);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body{
+    background: #000000;
+    margin: 0 auto; /*centraliza*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*header*/
+
+header{
+    align-items: center;
+    justify-content: center;
+    padding: 0 123px 0;
+    max-width: 1440px;
+    width: 100%;
+}
+
+.header_container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 7.4rem;
+}
+
+.header_container ul{
+    display: flex;
+    gap: 3rem;
+    font-size: 1.6rem;
+}
+
+.header_container ul a{
+    text-decoration: none;
+}
+
+.header_container picture{
+    margin-right: 4.8rem;
+}
+
+.header_btn{
+    margin-left: auto;
+    gap: 1.6rem;
+    display: flex;
+}
+
+.header_btn button, .main_btn button:nth-child(1){
+    height: 5.8rem;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+}
+
+.header_btn button:nth-child(1), .main_btn button:nth-child(1){
+    width: 18rem;
+    border:none;
+    background: rgb(206,159,252);
+    background: linear-gradient(180deg, rgba(206,159,252,1) 0%, rgba(165,130,247,1) 50%, rgba(115,103,240,1) 99%);  
+}
+
+.header_btn button:nth-child(2){
+    width: 20rem;
+    border: 2px solid rgb(206,159,252);
+    border: linear-gradient(180deg, rgba(206,159,252,1) 0%, rgba(165,130,247,1) 50%, rgba(115,103,240,1) 99%);
+    border-image-slice: 1;
+    border-radius: 0.5rem;  
+    background-color: transparent;
+}
+
+/*main_container*/
+
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 7.5rem 0;
+}
+
+.main_container picture:nth-child(1){
+    position: absolute;
+    left: 0;
+    margin-top: -40rem;
+    margin-left: -4rem;
+    z-index: -1;
+}
+
+.main_container{
+    width: 124.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin-top: 19.9rem;
+}
+
+.main_container h1{
+    font-size: 11.6rem;
+    font-family: 'CabinetGrotesk-Black';
+}
+
+.main_container h1:nth-child(3){
+    background-image: linear-gradient(to bottom, rgb(137, 137, 137), rgb(255, 255, 255));
+    background-clip: text;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
+.let{
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 4.2rem 0 4.7rem 0;
+}
+
+/*main_btn*/
+
+.main_btn{
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+.main_btn button:nth-child(2){
+    width: 14.4rem;
+    height: 4.8rem;
+}
+
+.our_story{
+    background-image: url(../image/video-square.svg);
+    height: 3rem;
+    background-repeat: no-repeat;
+    text-align: right;
+    font-size: 1.8rem;
+    background-position: center left;
+    background-color: transparent;
+}
+
+/*main_frame_users*/
+
+.main_frame_users{
+    margin-top: 9.6rem;
+    display: flex;
+    gap: 4.7rem;
+}
+
+.main_frame_users .users_n{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main_frame_users .users_n h3{
+    font-size: 3.2rem;
+    font-family: 'CabinetGrotesk-Black';
+}
+
+.main_frame_users .users_n p{
+    font-size: 1.8rem;
+}
+
+/*logos_aleto*/
+
+.logos_aleto{
+    content: '';    
+    width: 100%;
+    height: 14rem;
+    transform: rotate(3deg);
+    margin-top: 16.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7rem;
+    position: relative;
+}
+
+.logos_aleto picture img{
+    transform: rotate(-3deg);
+}
+
+.logos_aleto::before{
+    content: '';
+    width: 100%;
+    height: 14rem;
+    transform: rotate(-4deg);
+    background: rgb(206,159,252);
+    background: linear-gradient(180deg, rgba(206,159,252,1) 0%, rgba(165,130,247,1) 50%, rgba(115,103,240,1) 99%);  
+    position: absolute;
+    opacity: 0.7;
+}
+
+.logos_aleto::after{
+    content: '';
+    position: absolute;
+    background: rgb(206,159,252);
+    background: linear-gradient(180deg, rgba(206,159,252,1) 0%, rgba(165,130,247,1) 50%, rgba(115,103,240,1) 99%);  
+    width: 100%;
+    height: 14rem;
+}
+
+.logos_aleto picture{
+    z-index: 100;
+}
